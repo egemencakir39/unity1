@@ -7,11 +7,11 @@ public class fareiletisimkurma : MonoBehaviour
     public UnityEngine.UI.Text text;
     void OnMouseDown() 
     {
-        text.text = "Merhaba benim ad�m " + this.name;   // tıkla etkileşim kur
+        text.text = "Merhaba benim adım " + this.name;   // tıkla etkileşim kur
     } 
     void OnMouseDrag()
     {
-        Vector2 pos = Input.mousePosition;
+        Vector2 objPos = collison
         Vector3 objPos = Camera.main.ScreenToWorldPoint (new Vector3 (pos.x, pos.y, 1f)); // sürükle bırak
         transform.position = objPos;
     }        
